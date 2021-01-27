@@ -10,8 +10,7 @@ public class SpringDemoApplication {
 
     public static void main(String[] args) {
         ConfigurableApplicationContext run = SpringApplication.run(SpringDemoApplication.class, args);
-        TestDemo bean = run.getBean(TestDemo.class);
-        bean.hello();
+        System.out.println( run.getBean("testDemo"));
     }
 
 }

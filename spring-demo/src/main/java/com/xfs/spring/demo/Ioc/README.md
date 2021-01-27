@@ -1,0 +1,2 @@
+### spring bean形成过程
+java文件通过classloader变成class文件，用`BeanDefinition`对象描述bean，放在map中，可以通过实现`BeanFactoryPostProcessor`接口去修改beanDefinition对象的一些参数。
